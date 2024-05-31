@@ -1,0 +1,30 @@
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color:#051822;
+}
+
+.heading span{
+    color: #AA7452;
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding:0 1.5rem;
+}
+
+#about {
+    background-color: #D4C9C7; /* Very Light Grayish-Pink */
+    color: #051822; /* Dark Blue/Black */
+    padding: 10px 20px;
+    margin: -90px 0;
+    text-align: center;  
+}
+
+#about p {
+    color: #031930;
+    font-size: 19px; /* Standard font size */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin: -60px auto 20px auto; /* Adjust margin to move paragraph closer to heading */
+    max-width: 1100px; /* Optional: Limit maximum width of the paragraph */
+    text-align: center; /* Center align the text */
+}

@@ -10,6 +10,7 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust as needed */
     gap: 10px; /* Adjust the gap between items */
     margin: -60px auto 20px auto; /* Adjust margin to move paragraph closer to heading */
+    margin-bottom: 70px;
 }
 
 .carousel img {

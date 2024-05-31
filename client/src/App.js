@@ -8,6 +8,7 @@ import TShirts from "./Merch/T-shirts";
 import Hoodies from "./Merch/Hoodies";
 import AboutUs from "./About/About";
 import ContactUs from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Hoodies />
             <AboutUs />
             <ContactUs />
+            <Footer />
         </Router>
     );
 };

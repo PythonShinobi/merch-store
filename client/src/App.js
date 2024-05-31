@@ -6,6 +6,7 @@ import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import TShirts from "./Merch/T-shirts";
 import Hoodies from "./Merch/Hoodies";
+import AboutUs from "./About/About";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Hero />   
             <TShirts />
             <Hoodies />
+            <AboutUs />
         </Router>
     );
 };

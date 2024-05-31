@@ -1,0 +1,23 @@
+footer {
+    background-color: #2D383E; /* Dark Grayish-Blue */
+    color: #969A9E; /* Medium Gray with Blue Tint */
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.social-icons a {
+    color: #AA7452;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0073e6;
+}

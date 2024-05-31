@@ -1,0 +1,48 @@
+#t-shirts {
+    background-color: #D4C9C7; /* Very Light Grayish-Pink */
+    color: #051822; /* Dark Blue/Black */
+    padding: 20px 20px;
+    text-align: center;   
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color:#051822;
+}
+
+.heading span{
+    color: #AA7452;
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding:0 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust as needed */
+    gap: 10px; /* Adjust the gap between items */
+    margin: -60px auto 20px auto; /* Adjust margin to move paragraph closer to heading */
+}
+
+.grid img {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px; /* Add rounded corners to the images */
+}
+
+.item {
+    position: relative;
+}
+
+.price {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}

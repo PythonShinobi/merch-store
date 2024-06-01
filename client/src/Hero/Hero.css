@@ -56,3 +56,263 @@
 .overlay .btn:hover {
     background-color: #7C5841; /* Dark Brown */
 }
+
+@media screen and (min-width: 1920px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 630px;
+        height: 200px;
+        top: 25%;
+        padding: 80px;
+        transform: translate(-50%, 20%);
+        border-radius: 8px;
+    }
+
+    .overlay h1 {
+        font-size: 50px;
+        white-space: nowrap; /* Prevent text wrapping */  
+        padding-bottom: 20px;        
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;        
+        font-size: 35px;        
+    }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1500px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 630px;        
+        top: 12%;
+        padding: 80px;
+        transform: translate(-50%, 20%);
+        border-radius: 8px;
+    }
+
+    .overlay h1 {
+        font-size: 50px;
+        white-space: nowrap; /* Prevent text wrapping */  
+        padding-bottom: 20px;        
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;        
+        font-size: 39px;        
+    }
+}
+
+
+@media screen and (max-width: 1699px) and (min-width: 1300px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 430px;
+        /* height: 200px; */
+        top: 12%;
+        padding: 80px;        
+        border-radius: 8px;
+        transform: translate(-50%, 50%);
+    }
+
+    .overlay h1 {
+        font-size: 30px;
+        white-space: nowrap; /* Prevent text wrapping */  
+        padding-bottom: 20px;        
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;        
+        font-size: 20px;        
+    }
+}
+
+/* Tablet screens */
+@media screen and (max-width: 1280px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 430px;
+        top: 25%;
+        padding: 60px;
+        transform: translate(-50%, 20%);
+        border-radius: 8px;
+    }
+
+    .overlay h1 {
+        font-size: 40px;
+        white-space: nowrap; /* Prevent text wrapping */           
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 400px;
+        top: 25%;
+        padding: 60px;
+        transform: translate(-50%, -40%);
+        border-radius: 9px;
+    }
+
+    .overlay h1 {
+        font-size: 35px;
+        white-space: nowrap; /* Prevent text wrapping */        
+        transform: translate(2%, -50%);
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 760px) and (min-width: 500px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 250px;
+        top: 100%;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+    }
+
+    .overlay h1 {
+        font-size: 20px;
+        white-space: nowrap; /* Prevent text wrapping */
+        padding-bottom: 10px;                
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Phone screens like Samsung */
+@media screen and (max-width: 499px) and (min-width: 400px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 200px;        
+        transform: translate(-50%, -50%);
+        top: 23%;
+        padding: 25px;
+    }
+
+    .overlay h1 {
+        padding-bottom: 10px;
+        font-size: 18px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Phone screens like Samsung */
+@media screen and (max-width: 399px) and (min-width: 370px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 200px;        
+        transform: translate(-50%, -50%);
+        top: 25%;
+        padding: 25px;
+    }
+
+    .overlay h1 {
+        padding-bottom: 10px;
+        font-size: 18px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Phone screens like Samsung */
+@media screen and (max-width: 360px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 200px;        
+        transform: translate(-50%, -50%);
+        top: 23%;
+        padding: 25px;
+    }
+
+    .overlay h1 {
+        padding-bottom: 10px;
+        font-size: 18px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #hero .hero-image {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        width: 180px;        
+        transform: translate(-50%, -50%);
+        top: 27%;
+        padding: 25px;
+    }
+
+    .overlay h1 {
+        padding-bottom: 10px;
+        font-size: 15px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .overlay .btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+}

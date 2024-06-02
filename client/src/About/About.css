@@ -28,3 +28,161 @@
     max-width: 1100px; /* Optional: Limit maximum width of the paragraph */
     text-align: center; /* Center align the text */
 }
+
+@media screen and (min-width: 1920px) {
+    #about .heading {
+        font-size: 5.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #about .heading span {
+        font-size: 5.5rem;
+    }
+
+    #about p {
+        font-size: 1.8rem; /* Adjust font size for readability */
+        line-height: 2.8rem; /* Adjust line height for readability */
+        max-width: 1300px; /* Set a maximum width to keep lines of text from getting too long */                
+        margin-top: -60px;
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 1699px) {
+    #about .heading {
+        font-size: 4.4rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #about .heading span {
+        font-size: 4.4rem;
+    }
+
+    #about p {
+        font-size: 1.7rem;
+        line-height: 2.5rem; /* Adjust line height for readability */
+        margin-bottom: 50px;
+        max-width: 1300px; /* Set a maximum width to keep lines of text from getting too long */
+    }
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1300px) {
+    #about .heading {
+        font-size: 3.9rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #about .heading span {
+        font-size: 3.9rem;
+    }
+
+    #about p {
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #about .heading {
+        font-size: 4.2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #about .heading span {
+        font-size: 4.2rem;
+    }
+
+    #about p {
+        font-size: 1.6rem;
+        margin-bottom: 50px;
+        max-width: 1200px; /* Set a maximum width to keep lines of text from getting too long */
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    #about .heading {
+        font-size: 3.2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #about .heading span {
+        font-size: 3.2rem;
+    }
+
+    #about p {
+        font-size: 1.4rem;
+        margin-bottom: 50px;
+        max-width: 1300px; /* Set a maximum width to keep lines of text from getting too long */                
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px) {
+    #about .heading {
+        font-size: 2.4rem;
+        padding-bottom: 3.5rem;
+        margin-top: 60px;
+    }
+
+    #about .heading span {
+        font-size: 2.4rem;
+    }
+
+    #about p {
+        font-size:1.2rem;
+        margin-bottom: 20px;
+        line-height: 1.7rem; /* Adjust line height for readability */
+    }
+}
+
+@media screen and (max-width: 399px) and (min-width: 370px) {
+    #about .heading {
+        font-size: 2rem;
+        margin-top: 60px;
+        padding-bottom: 3.5rem;
+    }
+
+    #about .heading span {
+        font-size: 2.2rem;
+    }
+
+    #about p {
+        font-size:1.2rem;
+        margin-bottom: 20px;
+        line-height: 1.7rem; /* Adjust line height for readability */
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #about .heading {
+        font-size: 2.3rem;
+        margin-top: 60px;
+        padding-bottom: 3.5rem;
+    }
+
+    #about .heading span {
+        font-size: 2.2rem;
+    }
+
+    #about p {
+        font-size:1.2rem;
+        margin-bottom: 20px;
+        line-height: 1.7rem; /* Adjust line height for readability */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #about .heading {
+        font-size: 2.3rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #about .heading span {
+        font-size: 2.2rem;
+    }
+
+    #about p {
+        font-size:1rem;
+        margin-bottom: 20px;
+        line-height: 1.7rem; /* Adjust line height for readability */
+    }
+}

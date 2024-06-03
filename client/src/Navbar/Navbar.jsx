@@ -1,5 +1,5 @@
 // client/src/Navbar/Navbar.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { IoClose, IoMenu} from "react-icons/io5";
 
@@ -8,6 +8,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const location = useLocation();
   const [showMenu, setShowMenu] = useState(false);
+  const navRef = useRef(null);
 
   // Function to toggle the visibility of the menu.
   const toggleMenu = () => {
@@ -22,10 +23,26 @@ const Navbar = () => {
     }
   };
 
+  // An event listener to detect clicks outside of the navigation menu.
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // If the click event target is not within the navigation menu 
+			//  set showMenu state to false.
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header>
       <div className="logo">My Fashion</div>
-      <nav>
+      <nav ref={navRef}>
       <div className={`nav-menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
         <ul>
           <li>

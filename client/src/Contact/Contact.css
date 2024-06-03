@@ -6,36 +6,38 @@
     margin-top: 90px;
 }
 
-#contact h1.heading {
-    color: #333; /* Dark gray text color */
+#contact .heading {
+    color: #051822; /* Dark gray text color */
     margin-bottom: 20px;
     text-align: center;
 }
 
-.heading{
+.heading {
     text-align: center;
     padding-bottom: 3rem;
-    font-size: 3rem;
-    color:#051822;
+    font-size: 3.8rem;
+    color: #051822;
 }
 
-.heading span{
+.heading span {
     color: #AA7452;
+    font-size: 3.8rem;
     border-radius: .5rem;
     background: rgba(0, 0, 0, 0.7);
-    padding:0 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .contact-container {
     display: flex;
-    justify-content: center;
-    align-items: stretch; /* Adjusts the height of the form container */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
     gap: 20px;
 }
 
-.map {
-    flex: 1;
-    max-width: 50%;
+.map-container,
+.form-container {
+    width: 100%;
+    max-width: 600px; /* Adjust the width as needed */
 }
 
 .map iframe {
@@ -44,11 +46,9 @@
 }
 
 #contact form {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%; /* Make the form container the same height as the map */
 }
 
 #contact input, #contact textarea {
@@ -90,4 +90,134 @@
 
 #contact button:hover {
     background-color: #AA7452; /* Light Brown background */
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    #contact .heading {
+        font-size: 3.2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #contact .heading span {
+        font-size: 3.2rem;
+    }
+
+    .map-container iframe {
+        height: 400px; /* Adjust height for small screens */
+        width: 500px;
+    }
+
+    #contact input, #contact textarea {
+        width: 90%; /* Adjust input width for small screens */
+        max-width: 300px; /* Ensure a maximum width */
+    }
+
+    #contact button {
+        width: 90%;
+        max-width: 300px; /* Ensure a maximum width */
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px) {
+    #contact .heading {
+        font-size: 2.4rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #contact .heading span {
+        font-size: 2.4rem;
+    }
+
+    .map-container iframe {
+        height: 200px; /* Adjust height for small screens */
+        width: 350px;
+    }
+
+    #contact input, #contact textarea {
+        width: 90%; /* Adjust input width for small screens */
+        max-width: 300px; /* Ensure a maximum width */
+    }
+
+    #contact button {
+        width: 90%;
+        max-width: 300px; /* Ensure a maximum width */
+    }
+}
+
+@media screen and (max-width: 399px) and (min-width: 370px) {
+    #contact .heading {
+        font-size: 2.2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #contact .heading span {
+        font-size: 2.2rem;
+    }
+
+    .map-container iframe {
+        height: 200px; /* Adjust height for small screens */
+        width: 320px;
+    }
+
+    #contact input, #contact textarea {
+        width: 90%; /* Adjust input width for small screens */
+        max-width: 300px; /* Ensure a maximum width */
+    }
+
+    #contact button {
+        width: 90%;
+        max-width: 300px; /* Ensure a maximum width */
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #contact .heading {
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #contact .heading span {
+        font-size: 2.5rem;
+    }
+
+    .map-container iframe {
+        height: 200px; /* Adjust height for small screens */
+        width: auto;
+    }
+
+    #contact input, #contact textarea {
+        width: 90%; /* Adjust input width for small screens */
+        max-width: 300px; /* Ensure a maximum width */
+    }
+
+    #contact button {
+        width: 90%;
+        max-width: 300px; /* Ensure a maximum width */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #contact .heading {
+        font-size: 2.3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #contact .heading span {
+        font-size: 2.2rem;
+    }
+
+    .map-container iframe {
+        height: 200px; /* Adjust height for small screens */
+        width: 240px;
+    }
+
+    #contact input, #contact textarea {
+        width: 90%; /* Adjust input width for small screens */
+        max-width: 300px; /* Ensure a maximum width */
+    }
+
+    #contact button {
+        width: 90%;
+        max-width: 300px; /* Ensure a maximum width */
+    }
 }

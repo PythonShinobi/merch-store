@@ -1,41 +1,47 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+// server/main/app.js
+import express from "express";
+import cookieParser from "cookie-parser";
+import logger from "morgan";
+import bodyParser from "body-parser";
+import cors from "cors";
+import env from "dotenv";
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+import apiRouter from "./api.js";
 
-var app = express();
+// Configuration for the server.
+env.config();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+// Create an Express application.
+const app = express();
 
+// Define the origins from which the frontend will be making requests.
+const allowedOrigins = [ process.env.HOST ];
+
+// Configure CORS to allow requests from specified origins.
+app.use(cors({
+	origin: function (origin, callback) {
+		// Check if the origin is included in the allowedOrigins array or if it's undefined (which happens with same-origin requests)
+		if (!origin || allowedOrigins.includes(origin)) {
+			callback(null, true);  // Allow the request
+		} else {
+			callback(new Error("Not allowed by CORS"));  // Deny the request
+		}
+	},
+	credentials: true  // Allow cookies to be sent along with the request.
+}));
+
+// Logging middleware: Log HTTP requests to the console in a development-friendly format
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+
+// Parse incoming JSON requests
+app.use(bodyParser.json());
+
+// Set up body-parser middleware to parse URL-encoded request bodies
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Parse cookies attached to the HTTP requests
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use("/api", apiRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
-
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
-
-module.exports = app;
+export default app;

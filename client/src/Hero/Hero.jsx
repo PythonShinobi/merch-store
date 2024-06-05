@@ -11,7 +11,7 @@ const Hero = () => {
         <img src={gojoImage} alt="Gojo" className="hero-image" />
         <div className="overlay">
           <h1>Discover Our Collection</h1>
-          <a href="#collection" className="btn">View Collection</a>
+          <a href="#t-shirts" className="btn">View Collection</a>
         </div>
       </div>
     </section>

@@ -41,6 +41,7 @@ const ContactUs = () => {
       <div className="contact-container">
         <div className="map-container">        
         <iframe
+            title="Google Maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2318786211672!2d36.79463679999999!3d-1.2107672999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3d454886e4ab%3A0xc48e63a813496999!2sTwo%20Rivers!5e0!3m2!1sen!2ske!4v1717074885498!5m2!1sen!2ske"
             width="600"
             height="450"

@@ -200,7 +200,7 @@
         width: 250px;
         top: 100%;
         padding: 40px;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -300%);
     }
 
     .overlay h1 {

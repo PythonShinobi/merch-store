@@ -92,6 +92,13 @@
     background-color: #AA7452; /* Light Brown background */
 }
 
+@media screen and (max-width: 1280px) {
+    .map-container iframe {
+        height: 400px; /* Adjust height for small screens */
+        width: 500px;
+    }
+}
+
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     #contact .heading {
         font-size: 3.2rem;
